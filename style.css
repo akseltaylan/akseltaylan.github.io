@@ -1,7 +1,7 @@
 body {
 	font-family: 'Anonymous Pro';font-size: 12px;
 	padding: 25px;
-	margin: 50px;
+	margin-right: 50px;
 }
 
 h1 {
@@ -31,7 +31,6 @@ ul {
 	padding: 0;
 	width: 200px;
 	background-color: rgb(238,130,238);
-	align: right;
 	position: fixed;
 	overflow: auto;
 }
