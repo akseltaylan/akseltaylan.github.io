@@ -20,3 +20,14 @@ p {
 	padding: 25px;
 	margin: 60px;
 }
+
+a {
+	color: black;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	div {
+		margin: 63%;
+		width: 70%;
+	}
+}
