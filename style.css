@@ -1,4 +1,9 @@
+body {
+	font-family: 'Cairo';font-size: 12px;
+}
+
 h1 {
 	color: green;
 	text-align: center;
+	font-family: 'Cairo';font-size: 22px;
 }
