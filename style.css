@@ -19,6 +19,11 @@ p {
 	text-align: left;
 }
 
+.content {
+	padding: 25px;
+	margin: 50px;
+}
+
 a {
 	color: black;
 }
