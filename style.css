@@ -28,7 +28,7 @@ a {
 ul {
 	list-style-type: none;
 	margin: 0;
-	margin-right: 25%;
+	float: right;
 	padding: 0;
 	width: 200px;
 	background-color: rgb(238,130,238);
