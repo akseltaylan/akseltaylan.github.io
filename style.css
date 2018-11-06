@@ -1,13 +1,15 @@
 body {
 	font-family: 'Anonymous Pro';font-size: 12px;
+	padding: 25px;
+	margin: 50px;
 }
 
 h1 {
 	background-color: rgb(238,130,238);
 	color: white;
-	text-align: center;
+	text-align: left;
 	font-family: 'Cairo';font-size: 22px;
-	width: 200px;
+	width: 500px;
 	padding: 25px;
 	margin: 50px;
 }
