@@ -25,20 +25,13 @@ a {
 	color: black;
 }
 
-section {
-	display: -webkit-flex;
-	display: flex;
-}
-
 ul {
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 200px;
 	background-color: rgb(238,130,238);
+	align: right;
 	position: fixed;
 	overflow: auto;
 }
@@ -58,9 +51,5 @@ li a:hover {
 	div {
 		margin: 63%;
 		width: 70%;
-	}
-	section {
-		-webkit-flex-direction: column;
-		flex-direction: column;
 	}
 }
