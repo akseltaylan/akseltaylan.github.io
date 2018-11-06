@@ -31,7 +31,7 @@ a {
 ul {
 	list-style-type: none;
 	float: right;
-	margin: 50px;
+	margin-right: 250px;
 	padding: 25px;
 	width: 200px;
 	background-color: rgb(238,130,238);
