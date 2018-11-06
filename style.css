@@ -8,14 +8,15 @@ h1 {
 	background-color: rgb(238,130,238);
 	color: white;
 	text-align: left;
-	font-family: 'Cairo';font-size: 22px;
-	width: 500px;
+	font-family: 'Cairo';font-size: 44px;
+	width: 1000px;
 	padding: 25px;
 	margin: 50px;
 }
 
 p {
-	font-family: 'Anonymous Pro';font-size: 12px;
+	font-family: 'Anonymous Pro';font-size: 16px;
+	text-align: left;
 	padding: 25px;
 	margin: 50px;
 }
