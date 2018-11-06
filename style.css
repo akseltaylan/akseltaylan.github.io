@@ -25,6 +25,25 @@ a {
 	color: black;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: rgb(238,130,238);
+}
+
+li a {
+	display: block;
+	padding: 8px 16px;
+	color: #000;
+}
+
+li a:hover {
+	background-color: #555;
+	color: white;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	div {
 		margin: 63%;
