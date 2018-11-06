@@ -17,8 +17,8 @@ h1 {
 p {
 	font-family: 'Anonymous Pro';font-size: 16px;
 	text-align: left;
-	padding: 0;
-	margin: 0;
+	padding: 25px;
+	margin: 50px;
 }
 
 a {
@@ -28,7 +28,6 @@ a {
 ul {
 	list-style-type: none;
 	float: right;
-	margin: 0;
 	margin-left: 400px;
 	padding: 0;
 	width: 200px;
