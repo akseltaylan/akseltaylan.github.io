@@ -3,7 +3,11 @@ body {
 }
 
 h1 {
-	color: green;
+	background-color: rgb(238,130,238);
+	color: white;
 	text-align: center;
 	font-family: 'Cairo';font-size: 22px;
+	width: 200px;
+	padding: 25px;
+	margin: 50px;
 }
