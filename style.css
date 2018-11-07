@@ -30,9 +30,20 @@ a {
 	color: black;
 }
 
+.rightcolumn {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 ul {
 	list-style-type: none;
-	float: right;
 	margin: 0;
 	padding: 0;
 	width: 200px;
