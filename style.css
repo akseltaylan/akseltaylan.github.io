@@ -22,7 +22,8 @@ p {
 .content {
 	padding: 25px;
 	margin: 50px;
-	width: 1000px;
+	float: left;
+	width: 75%;
 }
 
 a {
