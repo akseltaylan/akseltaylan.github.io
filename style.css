@@ -32,7 +32,7 @@ ul {
 	list-style-type: none;
 	float: right;
 	margin: 0;
-	padding: 500px;
+	padding: 0;
 	width: 200px;
 	background-color: rgb(238,130,238);
 }
