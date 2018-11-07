@@ -2,6 +2,36 @@
     box-sizing: border-box;
 }
 
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header header header header' 
+  'left left middle middle right right' 
+  'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
 body {
 	font-family: 'Anonymous Pro';font-size: 12px;
 	padding: 25px;
@@ -17,6 +47,11 @@ h1 {
 	width: 1000px;
 	padding: 25px;
 	margin: 50px;
+	grid-area: header;
+}
+
+footer {
+	grid-area: footer;
 }
 
 p {
