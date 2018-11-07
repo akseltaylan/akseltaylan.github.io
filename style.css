@@ -42,6 +42,7 @@ a {
 }
 
 .row:after {
+	width: 1000px;
     content: "";
     display: table;
     clear: both;
