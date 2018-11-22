@@ -82,7 +82,7 @@ ul {
 }
 
 li a {
-	display: block;
+	display: inline;
 	padding: 8px 16px;
 	color: white;
 }
