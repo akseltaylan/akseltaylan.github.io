@@ -75,8 +75,12 @@ a {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    color: white;
+	text-align: left;
+	font-family: 'Cairo';
+	width: 1000px;
+	padding: 25px;
+	margin: 50px;
     overflow: hidden;
     font-size: 20px;
     background-color: #333;
