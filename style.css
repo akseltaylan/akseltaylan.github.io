@@ -79,11 +79,11 @@ ul {
 	text-align: left;
 	font-family: 'Cairo';
 	width: 1000px;
-	padding: 25px;
-	margin: 50px;
+	padding: 0px;
+	margin: 0px;
     overflow: hidden;
     font-size: 20px;
-    background-color: #333;
+    background-color: rgb(238,130,238);
 }
 
 li {
@@ -99,5 +99,5 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #555;
 } /* 555 */
