@@ -39,7 +39,8 @@ h1 {
 	font-family: 'Cairo';font-size: 44px;
 	width: 1000px;
 	padding: 25px;
-	margin: 50px;
+    margin-bottom: 0px;
+	margin-left: 50px;
 	grid-area: header;
 }
 
@@ -48,14 +49,18 @@ footer {
 }
 
 p {
+	margin-top: 5px;
 	font-family: 'Anonymous Pro';
 	font-size: 16px;
 	text-align: left;
+    margin-bottom: 0px;
 }
 
 .content {
 	padding: 25px;
-	margin: 50px;
+	margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 40px;
 }
 
 a {
@@ -80,8 +85,10 @@ ul {
 	text-align: left;
 	font-family: 'Cairo';
 	width: 1000px;
-	padding: 25px;
-	margin: 50px;
+	padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
     overflow: hidden;
     font-size: 20px;
 }
