@@ -68,6 +68,12 @@ a {
 	color: black;
 }
 
+.card {
+  background-color: red;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 .rightcolumn {
 	float: left;
 	width: 25%;
