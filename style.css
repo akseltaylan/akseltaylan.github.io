@@ -88,6 +88,15 @@ a {
     clear: both;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 ul {
 	background-color: rgb(238,130,238);
     list-style-type: none;
