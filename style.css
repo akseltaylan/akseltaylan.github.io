@@ -94,27 +94,30 @@ a {
   height: auto;
 }
 
-.container {
-  position: absolute;
+.overlay{
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #725872;
+img {
+  display: block;  
+}
+.container {
+    position: relative;
+    display: inline-block;
 }
 
 .container:hover .overlay {
-  opacity: 0.75;
+    opacity: 1;
 }
-
 .text {
   color: white;
   font-size: 20px;
