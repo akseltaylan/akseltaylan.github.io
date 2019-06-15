@@ -8,28 +8,17 @@
     box-sizing: border-box;
 }
 
-/* The grid container */
 .grid-container {
   display: grid;
-  grid-template-areas: 
-  'header header header header header header' 
-  'left left left left right right' 
-  'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-.left,
-.right {
-  padding: 10px;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
 }
 
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
 }
 
 body {
@@ -188,7 +177,8 @@ li a:hover {
   <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
 </head>
 <body>
-<h1><a href="index"><div style="color:black;text-decoration:none;">aksel taylan</div></a><img src="/images/me.png" class="avatar"></h1>
+<div class="grid-item"><h1><a href="index"><div style="color:black;text-decoration:none;">aksel taylan</div></a></h1></div>
+<div class="grid-item"><img src="/images/me.png" class="avatar"></div></div>
 <ul>
 <li><a href="../index">about</a></li>
 <li><a href="../projects">projects</a></li>
