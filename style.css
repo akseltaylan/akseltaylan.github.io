@@ -28,9 +28,10 @@
 
 body {
   font-family: 'Catamaran';font-size: 12px;
-  padding: 90px;
-  margin-left: 400px;
-    margin-right: auto;
+  padding: 40px;
+  margin: auto;
+  max-width: 800px;
+
 }
 
 h1 {
@@ -57,10 +58,9 @@ p {
 }
 
 .content {
-  padding: 25px;
+  padding: 0px;
   width: 800px;
   margin-top: 5px;
-    margin-left: 30px;
     margin-bottom: 40px;
 }
 
@@ -140,7 +140,7 @@ ul {
   padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 90px;
+    margin-left: 0px;
     overflow: hidden;
     font-size: 20px;
 }
@@ -166,4 +166,4 @@ li a:hover {
   height: 200px;
   border-radius: 50%;
   padding: 10px;
-  float: right;
+}
