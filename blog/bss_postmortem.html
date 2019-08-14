@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">a {text-decoration: none}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+}
+
+body {
+  font-family: 'Catamaran';font-size: 12px;
+  padding: 40px;
+  margin: auto;
+  max-width: 800px;
+
+}
+
+h1 {
+  background-color: rgb(255,255,255);
+  text-align: left;
+  font-family: 'Cairo';font-size: 44px;
+  width: 500px;
+  padding: 25px;
+    margin-bottom: 0px;
+  margin-left: 50px;
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+p {
+  margin-top: 5px;
+  font-family: 'Catamaran';
+  font-size: 20px;
+  text-align: left;
+    margin-bottom: 0px;
+}
+
+.content {
+  padding: 0px;
+  width: 800px;
+  margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+a {
+  color: black;
+  text-decoration:none;
+}
+
+.card {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255,255,255);
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay{
+    background: #555;
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+img {
+  display: block;  
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.container:hover .overlay {
+    opacity: 0.75;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ul {
+  background-color: rgb(255,255,255);
+    list-style-type: none;
+  text-align: left;
+  font-family: 'Cairo';
+  width: 500px;
+  padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+} /* 555 */
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 10px;
+}
+</style>
+</head>
+<html>
+<div>
+<head>
+  <meta charset="UTF-8" />
+  <title>aksel taylan | blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+</head>
+<body>
+<div class="grid-container">
+<div class="grid-item"><h1><a href="index"><div style="color:black;text-decoration:none;">aksel taylan</div></a></h1></div>
+<div class="grid-item"><img src="/images/me.png" class="avatar"></div></div>
+<ul>
+<li><a href="../index">about</a></li>
+<li><a href="../projects">projects</a></li>
+<li><a href="../blog">blog</a></li>
+<li><a href="../contact">contact me</a></li>
+</ul>
+<div class="content">
+<div class="card">
+<h2><big>Blue Sky Postmortem: What I Learned</big></h2>
+<h3>August 14, 2019</h3>
+<br/>
+<p>A couple of days ago, I wrapped up my first internship at a feature animation studio, and I learned a ridiculous amount. Before too much time passes, I want to try to write down as much as I can for future reference, and for anyone else interested.
+<br/><br/>
+- Don't be afraid to ask questions.
+<br/><br/>
+As an intern, it's not expected that you'll know everything. In fact, it's expected that you'll have questions and that's totally okay. The first couple of weeks of my internship, I struggled to find the right amount of time to spend wrestling with an issue before asking a coworker. The more experienced I got through the summer, the better and more comfortable I became with asking people for help - only after attempting several solutions myself as well as having put in a good amount of research online. At that point, it's a waste of time for both you and the studio to keep struggling.
+<br/><br/>
+- Get to know your colleagues.
+<br/><br/>
+There were so many amazing people at Blue Sky, and on the last day of the internship, it really hit me that I regretted not spending more time just having conversations with people and getting to know them better. Luckily, I got to know lots of people to the point where I now consider them to be lifelong friends - but there were so many more that I wished to have spent more time with. So, talk to those around you - chances are they'll blow you away with their talent and personality. It happened a ton during my ten weeks!
+<br/><br/>
+- New technology is the norm.
+<br/><br/>
+Blue Sky is at the bleeding edge of CG pipelines, so I had the unique opportunity to interface with extremely new and powerful software and workflows on a day-to-day basis. However, it was customary for other areas of the studio such as our DCC packages to consistently be at the forefront of their latest released versions. Thus, it was important to be able to pick up new skills with any given software or tech quickly - every day I came in to work, there was a possibility for something entirely novel to be on the table. It was exciting and exhilarating to be a part of this type of environment, but took some getting used to.
+<br/><br/>
+- Appreciate how cool it is.
+<br/><br/>
+This is a fairly general one, but it's really true. Prior to the internship, I had been bursting at the seams with excitement to experience working at an animation studio, and Blue Sky is one of the best in the business. The first week on the job was filled with wonderment and appreciation for the gorgeous art and captivating storytelling going on throughout the studio. However, as weeks passed and work became more intense, it was easy to forget just how special of a medium feature animation is, and focus solely on my projects. Towards the end of my internship, I took more time to look at recent renders from artists and listened to story pitches from development, and gave me a great deal of pride and happiness that I worked for and among these amazingly talented people. I wish I had done that more often!
+<br/><br/>
+- Have artists in mind.
+<br/><br/>
+When developing software, it's easy to get lost in the black and white of getting the base functionality to work, and polishing the GUI as well as optimizing performance. One thing that is unique about working in animation and on production is that the software is being developed directly for artists a couple of rows of cubicles down from you. A lot of times during the summer, I'd have meetings with artists to show off my tool and they'd have a lot of great feature requests and feedback that really shaped how my final product would look. A big takeaway from that is when initially working on a tool, it's helpful to constantly be thinking of how an artist is going to use this tool in their workflow, and make decisions/changes based on that mindset.
+<br/><br/>
+- Be confident!
+<br/><br/>
+Being surrounded by experienced and talented people can be intimidating, and for somebody who's not naturally confident, it can be easy to stay quiet and reserved during meetings and reviews. However, something huge I learned this summer is that it's imperative to speak up for yourself, be proud of your work, and be confident in your abilities and what you've put in front of people. For my final projects, I had the opportunity to show renders of my work to the CG supervisor as well as several department supervisors such as lighting and characters in a meeting that was solely about my tool. Originally I didn't realize the only talking point of the meeting was my work, and at first I was fairly anxious. However, once I got to talking about the functionality and my tools' uses, I grew more and more confident. Later, my final project was showed to the production designer, art director, and director of the film, and for that I applied what I learned and carried myself in a more confident way. I think that is something I'll take with me wherever I go next.
+<br/><br/>
+--
+<br/><br/>
+That's all I can think of for now. There is a whole lot more, but I feel these were the most relevant and important takeaways. I've said this a lot, but I'm extremely grateful for the time I spent at Blue Sky, and I've been permanently inspired by the amazing work being done by people there, and I feel so lucky to have been a part of it. What I'll leave you with is: support me and the wonderful team at Blue Sky by seeing Spies in Disguise, out on Christmas Day, and look out for the first trailer of Nimona (the film I worked on this summer) - I have no idea when it'll be out, but I'm 100% certain it'll blow you away.
+<br/><br/>
+</p></div>
+</div>
+</body>
+<footer>
+<div class="content"><p><a href="https://www.instagram.com/aksel_taylan/"><i class="fa fa-instagram"></i></a>
+<a href="https://twitter.com/aksel_taylan/"><i class="fa fa-twitter"></i></a>
+<a href="https://www.linkedin.com/in/aksel-taylan-830682101/"><i class="fa fa-linkedin"></i></a>
+<a href="https://github.com/akseltaylan/"><i class="fa fa-github"></i></a>
+<a href="https://vimeo.com/aksel/"><i class="fa fa-vimeo"></i></p></a></div>
+</footer>
+</div>
+</html>
