@@ -210,93 +210,93 @@ You can define any point in 3D space in terms of its <b>X, Y, and Z coordinates<
 <br/><br/>
 <center>0.0, 1.0, 0.0</center>
 <br/><br/>
-Pretty nifty, right? Let's visualize this.
+<p>Pretty nifty, right? Let's visualize this.
 <br/><br/>
 <center><img src="../images/normal.png" width="50%" height="50%"></center>
 <br/><br/>
-If that makes sense, then we can dive into why the <b>dot product</b> is basically magic.
+<p>If that makes sense, then we can dive into why the <b>dot product</b> is basically magic.
 <br/><br/>
-First off, let's clarify what it even is, mathematically.
+<p>First off, let's clarify what it even is, mathematically.
 <br/><br/>
 <center>Given two 3D vectors <b>a</b> and <b>b</b>, the dot product between <b>a</b> and <b>b</b> is as follows:
 <br/><br/>
 dot(a,b) = (a.x * b.x) + (a.y * b.y) + (a.z * b.z)</center>
 <br/><br/>
-Looks pretty harmless, right? It's a fairly simple calculation. The beauty is in what this calculation is telling you about the relationship between the two vectors. Before we dive any deeper, let's quickly run through normalizing a vector. This will be imperative to discover the power of the dot product.
+<p>Looks pretty harmless, right? It's a fairly simple calculation. The beauty is in what this calculation is telling you about the relationship between the two vectors. Before we dive any deeper, let's quickly run through normalizing a vector. This will be imperative to discover the power of the dot product.
 <br/><br/>
-Let's say we have a 3D vector a, defined as follows:
+<p>Let's say we have a 3D vector a, defined as follows:
 <br/><br/>
 <center>1.0, 1.0, 1.0</center>
 <br/><br/>
-<b>Normalizing</b> this vector means keeping that vector pointing in the same direction, but changing its unit length to equal 1. For the purposes of this article, that's more than sufficient for us to keep going!
+<p><b>Normalizing</b> this vector means keeping that vector pointing in the same direction, but changing its unit length to equal 1. For the purposes of this article, that's more than sufficient for us to keep going!
 <br/><br/>
-How do we normalize the vector, anyway? Well, first we need the <b>magnitude</b> of the vector, defined as follows, using the same vector <b>a</b> as an example:
+<p>How do we normalize the vector, anyway? Well, first we need the <b>magnitude</b> of the vector, defined as follows, using the same vector <b>a</b> as an example:
 <br/><br/>
 <center>magnitude(a) = sqrt ( (a.x ^ 2) + (a.y ^ 2) + (a.z ^ 2) )</center>
 <br/><br/>
-Essentially, we're taking the length of the vector here! The next step to finally normalize our vector is trivial!
+<p>Essentially, we're taking the length of the vector here! The next step to finally normalize our vector is trivial!
 <br/><br/>
 <center>normalize(a) = a / magnitude(a)</center>
 <br/><br/>
-By dividing our vector a by the scalar we get from calculating the magnitude, we get a normalized vector with unit length 1. You can check this for yourself by taking the magnitude of the resulting vector!
+<p>By dividing our vector a by the scalar we get from calculating the magnitude, we get a normalized vector with unit length 1. You can check this for yourself by taking the magnitude of the resulting vector!
 <br/><br/>
-With all of this knowledge, we can take a closer look at why the dot product is so magnificent. I think it's fun to plug some arbitrary numbers in and see what you get - maybe you can decipher what it's telling you on your own! Make sure you normalize your vectors before computing the dot product.
+<p>With all of this knowledge, we can take a closer look at why the dot product is so magnificent. I think it's fun to plug some arbitrary numbers in and see what you get - maybe you can decipher what it's telling you on your own! Make sure you normalize your vectors before computing the dot product.
 <br/><br/>
-Let's try taking the dot product of our normalized vector a with an identical vector, b. After normalizing, we get that:
+<p>Let's try taking the dot product of our normalized vector a with an identical vector, b. After normalizing, we get that:
 <br/><br/>
 <center><b>a</b> = 1.0 / sqrt(3), 1.0 / sqrt(3), 1.0 / sqrt(3)
 <br/>
 <b>b</b> = 1.0 / sqrt(3), 1.0 / sqrt(3), 1.0 / sqrt(3)</center>
 <br/><br/>
-Ok, now let's try taking the dot product of these two!
+<p>Ok, now let's try taking the dot product of these two!
 <br/><br/>
-What you should end up getting is the scalar number 3/3, or <b>1</b>. What did the dot product just tell us? That these two vectors are equivalent. Let's try another one.
+<p>What you should end up getting is the scalar number 3/3, or <b>1</b>. What did the dot product just tell us? That these two vectors are equivalent. Let's try another one.
 <br/><br/>
 <center><b>a</b> = 1.0 / sqrt(3), 1.0 / sqrt(3), 1.0 / sqrt(3)
 <br/>
 <b>b</b> = -1.0 / sqrt(3), -1.0 / sqrt(3), -1.0 / sqrt(3)</center>
 <br/><br/>
-This time I've multiplied our original vector <b>b</b> by the scalar -1, and then normalized the vector. This results in the exact opposite vector from <b>a</b>. Take a wild guess as to what the dot product will yield to us in this case -- <b>0</b>! 
+<p>This time I've multiplied our original vector <b>b</b> by the scalar -1, and then normalized the vector. This results in the exact opposite vector from <b>a</b>. Take a wild guess as to what the dot product will yield to us in this case -- <b>0</b>! 
 <br/><br/>
-The dot product allows us to determine the likeness of two vectors! On it's own, it might not seem so useful, but it makes up one of the core computations in the world of shading. Let's take a long at my sphere example in particular.
+<p>The dot product allows us to determine the likeness of two vectors! On it's own, it might not seem so useful, but it makes up one of the core computations in the world of shading. Let's take a long at my sphere example in particular.
 <br/><br/>
-A 3D sphere is essentially made up of a ton of 3D vectors representing <b>vertices</b>. Each vertex has a <b>normal</b>, what we discussed earlier, determining what direction the vertex is facing. Let's call our sphere S, and the vertices a set V, and the normals an adjacent set N.
+<p>A 3D sphere is essentially made up of a ton of 3D vectors representing <b>vertices</b>. Each vertex has a <b>normal</b>, what we discussed earlier, determining what direction the vertex is facing. Let's call our sphere S, and the vertices a set V, and the normals an adjacent set N.
 <br/><br/>
-If we don't have anything else in our scene, we'll simply get the sphere with a flat color. Each pixel will compute what you set the base color to be (an arbitrary r,g,b vector), and only that. But we want that beautiful shading that makes it look like it's a real sphere! We need to add a <b>light</b>. Just like in real life, objects in 3D space respond to light in the scene, through the power of mathematics.
+<p>If we don't have anything else in our scene, we'll simply get the sphere with a flat color. Each pixel will compute what you set the base color to be (an arbitrary r,g,b vector), and only that. But we want that beautiful shading that makes it look like it's a real sphere! We need to add a <b>light</b>. Just like in real life, objects in 3D space respond to light in the scene, through the power of mathematics.
 <br/><br/>
-We'll define our <b>light</b> L with a 3D vector LP which determines the position of the light. That's useful to us, because we want to know the direction L is facing in relation to our vertices V. We can determine this direction with simple vector subtraction:
+<p>We'll define our <b>light</b> L with a 3D vector LP which determines the position of the light. That's useful to us, because we want to know the direction L is facing in relation to our vertices V. We can determine this direction with simple vector subtraction:
 <br/><br/>
 <center>for every vertex v in V:
 <br/>
 LD (light direction) = LP - v</center>
 <br/><br/>
-Great! Now we have the direction of the light relative to each vertex, and we already had the normals of each vertex in our set N. Now, for every vertex v in V, we can determine how much the light should be affecting the shade of color at v. To do this, we first normalize both vectors, and then... Well, you may be able to guess.
+<p>Great! Now we have the direction of the light relative to each vertex, and we already had the normals of each vertex in our set N. Now, for every vertex v in V, we can determine how much the light should be affecting the shade of color at v. To do this, we first normalize both vectors, and then... Well, you may be able to guess.
 <br/><br/>
 <center>diffuse = dot(LD, n)</center>
 <br/><br/>
-Where n is a normal in N. Boom, using this simple calculation, we're able to achieve what is called <b>diffuse shading</b>, and get the sphere to look like the end of the gif up top! Here's a diagram if you're confused.
+<p>Where n is a normal in N. Boom, using this simple calculation, we're able to achieve what is called <b>diffuse shading</b>, and get the sphere to look like the end of the gif up top! Here's a diagram if you're confused.
 <br/><br/>
 <center><img src="../images/exampledp.png" width="70%" height="70%"></center>
 <br/><br/>
-Apologies for my poor drawing skills. Anyway, if we look at the vertex <b>v1</b> and its accompanying normalized normal <b>n1</b> (the hat just means it's normalized), and compare it to the light direction <b>LD1</b>, it's almost the exact same vector. Thus, taking the dot product at that vertex, we'd probably get a scalar close to <b>1</b>. Then, when calculating the color of every pixel with this formula:
+<p>Apologies for my poor drawing skills. Anyway, if we look at the vertex <b>v1</b> and its accompanying normalized normal <b>n1</b> (the hat just means it's normalized), and compare it to the light direction <b>LD1</b>, it's almost the exact same vector. Thus, taking the dot product at that vertex, we'd probably get a scalar close to <b>1</b>. Then, when calculating the color of every pixel with this formula:
 <br/><br/>
 <center>diffuse = dot(LD1, n1)
 <br/>
 pixelColor = objectColor + (lightColor * diffuse)</center>
 <br/><br/>
-We'd essentially be adding the lightColor at its full value! As R,G,B values get closer to 1, they get closer to white, or the brightest something can be. Now, let's look at the other vertex I highlighted.
+<p>We'd essentially be adding the lightColor at its full value! As R,G,B values get closer to 1, they get closer to white, or the brightest something can be. Now, let's look at the other vertex I highlighted.
 <br/><br/>
-Vertex <b>v1</b> with normal <b>n2</b> and light direction <b>LD2</b> garners a slightly different calculation.
+<p>Vertex <b>v1</b> with normal <b>n2</b> and light direction <b>LD2</b> garners a slightly different calculation.
 <br/><br/>
 <center>diffuse = dot(LD2, n2)
 <br/>
 pixelColor = objectColor + (lightColor * diffuse)</center>
 <br/><br/>
-Because the two vectors are so different, the diffuse scalar will be really small, close to 0. Thus, the lightColor will be attenuated in such a way that it won't really affect the pixelColor much at all.
+<p>Because the two vectors are so different, the diffuse scalar will be really small, close to 0. Thus, the lightColor will be attenuated in such a way that it won't really affect the pixelColor much at all.
 <br/><br/>
-What happens to the vertices in between these two extremes? Since each vertex has a slightly different normal and light direction, each will have a slightly different diffuse calculation. Overall, this will create a sort of <b>gradient</b> effect that you see in the gif at the top - successfully simulating the illusion of 3-dimensionality and lighting. Pretty cool, right?
+<p>What happens to the vertices in between these two extremes? Since each vertex has a slightly different normal and light direction, each will have a slightly different diffuse calculation. Overall, this will create a sort of <b>gradient</b> effect that you see in the gif at the top - successfully simulating the illusion of 3-dimensionality and lighting. Pretty cool, right?
 <br/><br/>
-So, overall, the <b>dot product</b> can do a whole lot of things other than diffuse shading. But, it's such a simple calculation, and produces such visually pleasing results, that it's hard not to be amazed by just this example. I hope this was interesting to you!
+<p>So, overall, the <b>dot product</b> can do a whole lot of things other than diffuse shading. But, it's such a simple calculation, and produces such visually pleasing results, that it's hard not to be amazed by just this example. I hope this was interesting to you!
 <br/><br/>
 </p></div>
 </div>
