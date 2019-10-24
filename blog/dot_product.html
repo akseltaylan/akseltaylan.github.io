@@ -282,17 +282,17 @@ LD (light direction) = LP - v</center>
 <br/><br/>
 <center>diffuse = dot(LD1, n1)
 <br/>
-pixelColor = objectColor + (lightColor * diffuse)</center>
+pixelColor = objectColor * (lightColor * diffuse)</center>
 <br/><br/>
 <p>We'd essentially be adding the lightColor at its full value! As R,G,B values get closer to 1, they get closer to white, or the brightest something can be. Now, let's look at the other vertex I highlighted.
 <br/><br/>
-<p>Vertex <b>v1</b> with normal <b>n2</b> and light direction <b>LD2</b> garners a slightly different calculation.
+<p>Vertex <b>v2</b> with normal <b>n2</b> and light direction <b>LD2</b> garners a slightly different calculation.
 <br/><br/>
 <center>diffuse = dot(LD2, n2)
 <br/>
-pixelColor = objectColor + (lightColor * diffuse)</center>
+pixelColor = objectColor * (lightColor * diffuse)</center>
 <br/><br/>
-<p>Because the two vectors are so different, the diffuse scalar will be really small, close to 0. Thus, the lightColor will be attenuated in such a way that it won't really affect the pixelColor much at all.
+<p>Because the two vectors are so different, the diffuse scalar will be really small, close to 0. Thus, the lightColor will be attenuated in such a way that the objectColor will get closer to 0, and thus the resulting color will be darker; close to black.
 <br/><br/>
 <p>What happens to the vertices in between these two extremes? Since each vertex has a slightly different normal and light direction, each will have a slightly different diffuse calculation. Overall, this will create a sort of <b>gradient</b> effect that you see in the gif at the top - successfully simulating the illusion of 3-dimensionality and lighting. Pretty cool, right?
 <br/><br/>
