@@ -1,3 +1,5 @@
+/* heavily inspired by jusung lee */
+
 p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -64,4 +66,19 @@ a:hover {
 
 b {
     font-weight: bolder;
+}
+#bss {
+  color: #2A8EB1;
+}
+#tamu {
+  color: #960000;
+}
+
+/* credit to https://rainbowcoding.com/2011/12/02/how-to-create-rainbow-text-in-html-css-javascript/ */
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
