@@ -64,6 +64,27 @@ a:hover {
   padding: 10px;
 }
 
+/* from https://stackoverflow.com/questions/40656611/best-way-to-make-a-image-grid-all-same-size-and-dimensions */
+.flexMe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexMe li{
+    width: 100px; 
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexMe li img{
+    width: 100%; 
+    height: auto;
+}
+
 b {
     font-weight: bolder;
 }
