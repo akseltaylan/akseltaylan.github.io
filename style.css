@@ -85,11 +85,27 @@ a:hover {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #555f5c;
 }
 
 .container:hover .overlay {
   opacity: 1;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* from https://stackoverflow.com/questions/40656611/best-way-to-make-a-image-grid-all-same-size-and-dimensions */
