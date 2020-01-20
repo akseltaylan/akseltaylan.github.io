@@ -9,14 +9,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p>
+	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p></br>
 	<ul class="flexMe">
-   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image"><div class="overlay"><div class="text">Nimona (2022)</div></div></div></li>
+   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" onclick=nim()><div class="overlay"><div class="text">Nimona (2022)</div></div></div></li>
    <li><div class="container"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay"><div class="text">Monte Carlo Path Tracer</div></div></div></li>
    <li><div class="container"><img src="images/lumiere.webp" alt="ARTe: Lumiere" class="image"><div class="overlay"><div class="text">ARTe: Lumiere</div></div></div></li>
    <li><div class="container"><img src="images/hauntanascreenshot.png" alt="Hauntana" class="image"><div class="overlay"><div class="text">Hauntana</div></div></div></li>
    <li><div class="container"><img src="images/hemut.webp" alt="ARTe: Hemut" class="image"><div class="overlay"><div class="text">ARTe: Hemut</div></div></div></li>
    <li><div class="container"><img src="images/hbscreenshot2.png" alt="Honey Bomb" class="image"><div class="overlay"><div class="text">Honey Bomb</div></div></div></li>
+
+   <div id ="projectDesc"><p></p></div>
+
+   <script>
+   	function nim() {
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "While working at Blue Sky as a Production Technology Technical Director Intern in Summer 2019, I was lucky enough to be a part of the <i>Nimona</i> team. (If you haven't read the graphic novel, I highly suggest it!) I wrote software and tools for artists in several different departments, particularly fur, rendering, and shading/look development.";
+   	}
+   	function hemut() {
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "I was on <i>ARTe: Hemut</i> from the start as a software engineer. I began by working on developing a prototype for the card-game mode, focusing on algorithms for sorting opponent decks in special ways to achieve the game design for the mode as well as UI features. My main work on the game came later when I created a system for game designers to easily set up different versions of the game board.";
+   	}
+   	function lumiere() {
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "As a software engineer intern at the <a href='https://live.viz.tamu.edu/'>LIVE Lab</a> I got to work on a couple of things for <i>ARTe: Lumiere</i> before we passed it on to our sister company, <a href='https://triseum.com/'>Triseum</a>. Because it was so late in the game's development when I came on, I mostly worked on simple bug fixes and UI updates.";
+   	}
+   </script>
 </ul>
 </body>
 </html>
