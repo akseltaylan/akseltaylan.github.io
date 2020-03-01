@@ -138,6 +138,15 @@ b {
 #tamu {
   color: #960000;
 }
+#pix1 {
+	color: #eae021;
+}
+#pix2 {
+	color: #d33a26;
+}
+#pix3 {
+	color: #0085d7;
+}
 
 /* credit to https://rainbowcoding.com/2011/12/02/how-to-create-rainbow-text-in-html-css-javascript/ */
 .rainbow {
