@@ -14,11 +14,11 @@
 	<!--<p style="float:left">page under construction</p>-->
 	<ul class="flexMe">
    <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona (2022)</div></div></div></li>
-   <li><div class="container"><a href="https://github.com/akseltaylan/pathtracer"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay"><div class="text">Monte Carlo Path Tracer</div></div></div></a></li>
-   <li><div class="container"><img src="images/lumiere.webp" alt="ARTe: Lumiere" class="image"><div class="overlay" onclick="lumiere()"><div class="text">ARTe: Lumiere</div></div></div></li>
-   <li><div class="container"><a href="https://tchojecki19.itch.io/hauntana"><img src="images/hauntanascreenshot.png" alt="Hauntana" class="image"><div class="overlay"><div class="text">Hauntana</div></div></div></a></li>
-   <li><div class="container"><img src="images/hemut.webp" alt="ARTe: Hemut" class="image"><div class="overlay" onclick="hemut()"><div class="text">ARTe: Hemut</div></div></div></li>
-   <li><div class="container"><a href="https://github.com/akseltaylan/honeybomb"><img src="images/hbscreenshot2.png" alt="Honey Bomb" class="image"><div class="overlay"><div class="text">Honey Bomb</div></div></div></a></li>
+   <li><div class="container"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay" onclick="pt()"><div class="text">Monte Carlo Path Tracer</div></div></div></li>
+   <li><div class="container"><img src="images/lumiere.png" alt="ARTe: Lumiere" class="image"><div class="overlay" onclick="lumiere()"><div class="text">ARTe: Lumiere</div></div></div></li>
+   <li><div class="container"><img src="images/hauntana.png" alt="Hauntana" class="image"><div class="overlay" onclick="hauntana()"><div class="text">Hauntana</div></div></div></li>
+   <li><div class="container"><img src="images/hemut.png" alt="ARTe: Hemut" class="image"><div class="overlay" onclick="hemut()"><div class="text">ARTe: Hemut</div></div></div></li>
+   <li><div class="container"><img src="images/vinegen.png" alt="Vine Generation" class="image"><div class="overlay" onclick="vinegen()"><div class="text">Vine Generation</div></div></div></li>
 
    <div id="myModal" class="modal">
 
@@ -50,6 +50,21 @@
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
    		x.innerHTML = "<p>As a <b>Software Engineer Intern</b> at the <a href='https://live.viz.tamu.edu/'>LIVE Lab</a> I got to work on a couple of things for <i>ARTe: Lumiere</i> before we passed it on to our sister company, <a href='https://triseum.com/'>Triseum</a>. Because it was so late in the game's development when I came on, I mostly worked on simple bug fixes and UI updates.</p>";
+   	}
+	function pt() {
+		modal.style.display = "block";
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "<p>In my free time during summer 2019, I decided to write a Monte Carlo Path Tracer in my free time, from scratch. It has various features in categories such as optimization (bounding volume hierarchy and multi-threading) as well as visuals (texture mapping, reflection/refraction).</p>";
+   	}
+	function hauntana() {
+		modal.style.display = "block";
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "<p>During Spring 2019, I developed a Unity 'cutesy-horror' game in a core team of five. I was co-responsible for gameplay programming, focusing on story progression, and I was the sole technical artist - I created an HDA to generate art-directable, stylized trees, and I implemented shaders for our unique look.</p>";
+   	}
+	function vinegen() {
+		modal.style.display = "block";
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "<p>My friends in the Visualization program invited me to be a Technical Director on their short film project, <i>Cascade</i>. The sets artists needed a tool to generate vine geometry without much, if any, manual work. This is what I developed for them!</p>";
    	}
    	function resetText() {
 		modal.style.display = "none";
