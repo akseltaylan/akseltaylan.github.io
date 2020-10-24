@@ -11,7 +11,6 @@
 	<body style="max-width: 2000px; margin-left: 3%; margin-right: 10%;">
 	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p>
 	</br></br></br>
-	<!--<p style="float:left">page under construction</p>-->
 	<ul class="flexMe">
    <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona (2022)</div></div></div></li>
    <li><div class="container"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay" onclick="pt()"><div class="text">Monte Carlo Path Tracer</div></div></div></li>
@@ -59,12 +58,12 @@
 	function hauntana() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
-   		x.innerHTML = "<p>During Spring 2019, I developed a Unity 'cutesy-horror' game called <i>Hauntana</i> in a core team of five.<br><br>I was co-responsible for <b>Gameplay Programming</b>, focusing on story progression, cutscenes, and the scare-o-meter feature. I was also the sole <b>Technical Artist</b> - I created an HDA to generate art-directable, stylized trees, and I implemented non-photo-realistic shaders and effects to hit our unique look.<br><br><a title='itch.io' target='_blank' href='https://tchojecki19.itch.io/hauntana'><i class='fa fa-external-link' style='font-size:24px'></i></a></p>";
+   		x.innerHTML = "<p>During Spring 2019, I helped develop a Unity 'cutesy-horror' game called <i>Hauntana</i> in a core team of five.<br><br>I was co-responsible for <b>Gameplay Programming</b>, focusing on story progression, cutscenes, and the scare-o-meter feature. I was also the sole <b>Technical Artist</b> - I created an HDA to generate art-directable, stylized trees, and I implemented non-photo-realistic shaders and effects to hit our unique look.<br><br><a title='itch.io' target='_blank' href='https://tchojecki19.itch.io/hauntana'><i class='fa fa-external-link' style='font-size:24px'></i></a></p>";
    	}
 	function vinegen() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
-   		x.innerHTML = "<p>My friends in the Visualization program invited me to be a <b>Technical Director</b> on their short film project, <i>Cascade</i>. The sets artists needed a tool to generate vine geometry without much, if any, manual work.<br><br>This plugin walks a non-deterministic path across various faces of the target mesh in order to produce an initial curve, which can be adjusted manually by the artist or simply re-generated through the tool's GUI. Once the artist is happy with the curve, the tool produces geometry from the curve and instantiates leaves throughout. This was implemented in Maya in order to provide easy access to the sets artists who were primarily working in Maya.<br><br><a title='Reel' target='_blank' href='https://vimeo.com/390393924'><i class='fa fa-vimeo' style='font-size:24px'></i></a></p>";
+   		x.innerHTML = "<p>My friends in the Visualization program invited me to be a <b>Technical Director</b> on their short film project, <i>Cascade</i>. I wrote a script to automatically load in custom shelves containing the tools I would write for the artists, and make it easy for other students on the project to contribute their own tools and scripts. The main project I worked on, however, was <b>Vine Generation</b> - the sets artists needed a tool to generate vine geometry without much, if any, manual work.<br><br>This plugin walks a non-deterministic path across various faces of the target mesh in order to produce an initial curve, which can be adjusted manually by the artist or simply re-generated through the tool's GUI. Once the artist is happy with the curve, the tool produces geometry from the curve and instantiates leaves throughout. This was implemented in Maya in order to provide easy access to the sets artists who were primarily working in Maya.<br><br><a title='Reel' target='_blank' href='https://vimeo.com/390393924'><i class='fa fa-vimeo' style='font-size:24px'></i></a></p>";
    	}
    	function resetText() {
 		modal.style.display = "none";
