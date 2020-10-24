@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-	<body style="max-width: 2000px; margin-left: 3%; margin-right: 7%;">
+	<body style="max-width: 2000px; margin-left: 3%; margin-right: 10%;">
 	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p>
 	</br></br></br>
 	<!--<p style="float:left">page under construction</p>-->
@@ -20,25 +20,51 @@
    <li><div class="container"><img src="images/hemut.webp" alt="ARTe: Hemut" class="image"><div class="overlay" onmouseover="hemut()" onmouseout="resetText()"><div class="text">ARTe: Hemut</div></div></div></li>
    <li><div class="container"><a href="https://github.com/akseltaylan/honeybomb"><img src="images/hbscreenshot2.png" alt="Honey Bomb" class="image"><div class="overlay"><div class="text">Honey Bomb</div></div></div></a></li>
 
-   <div id ="projectDesc"></div>
+   <div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <div class="modal-header">
+		<span class="close">&times;</span>
+	  </div>
+	  <div class="modal-body">
+		<div id ="projectDesc"></div>
+	  </div>
+	</div>
+  
+  </div>
 
    <script>
+	var modal = document.getElementsById("myModal");
    	function nim() {
+		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
    		x.innerHTML = "<p>While working at Blue Sky as a <b>Production Technology Technical Director Intern</b> in Summer 2019, I was lucky enough to be a part of the <i>Nimona</i> team. (If you haven't read the graphic novel, I highly suggest it!) I wrote software and tools for artists in several different departments, particularly fur, rendering, and shading/look development.</p>";
    	}
    	function hemut() {
+		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
    		x.innerHTML = "<p>I was on <i>ARTe: Hemut</i> from the start as a <b>Software Engineer</b>. I began by working on developing a prototype for the card-game mode, focusing on algorithms for sorting opponent decks in special ways to achieve the game design for the mode, as well as UI features. My main work on the game came later when I created a system for game designers to easily set up different versions of the game board.</p>";
    	}
    	function lumiere() {
+		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
    		x.innerHTML = "<p>As a <b>Software Engineer Intern</b> at the <a href='https://live.viz.tamu.edu/'>LIVE Lab</a> I got to work on a couple of things for <i>ARTe: Lumiere</i> before we passed it on to our sister company, <a href='https://triseum.com/'>Triseum</a>. Because it was so late in the game's development when I came on, I mostly worked on simple bug fixes and UI updates.</p>";
    	}
    	function resetText() {
+		modal.style.display = "none";
    		var x = document.getElementById("projectDesc");
    		x.innerHTML = "";
    	}
+	var closebtn = document.getElementsByClassName("close")[0];
+	closebtn.onclick = function() { modal.style.display = "none"; }
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
    </script>
 </ul>
 </body>
