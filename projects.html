@@ -13,11 +13,11 @@
 	</br></br></br>
 	<!--<p style="float:left">page under construction</p>-->
 	<ul class="flexMe">
-   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onmouseover="nim()" onmouseout="resetText()"><div class="text">Nimona (2022)</div></div></div></li>
+   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona (2022)</div></div></div></li>
    <li><div class="container"><a href="https://github.com/akseltaylan/pathtracer"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay"><div class="text">Monte Carlo Path Tracer</div></div></div></a></li>
-   <li><div class="container"><img src="images/lumiere.webp" alt="ARTe: Lumiere" class="image"><div class="overlay" onmouseover="lumiere()" onmouseout="resetText()"><div class="text">ARTe: Lumiere</div></div></div></li>
+   <li><div class="container"><img src="images/lumiere.webp" alt="ARTe: Lumiere" class="image"><div class="overlay" onclick="lumiere()"><div class="text">ARTe: Lumiere</div></div></div></li>
    <li><div class="container"><a href="https://tchojecki19.itch.io/hauntana"><img src="images/hauntanascreenshot.png" alt="Hauntana" class="image"><div class="overlay"><div class="text">Hauntana</div></div></div></a></li>
-   <li><div class="container"><img src="images/hemut.webp" alt="ARTe: Hemut" class="image"><div class="overlay" onmouseover="hemut()" onmouseout="resetText()"><div class="text">ARTe: Hemut</div></div></div></li>
+   <li><div class="container"><img src="images/hemut.webp" alt="ARTe: Hemut" class="image"><div class="overlay" onclick="hemut()"><div class="text">ARTe: Hemut</div></div></div></li>
    <li><div class="container"><a href="https://github.com/akseltaylan/honeybomb"><img src="images/hbscreenshot2.png" alt="Honey Bomb" class="image"><div class="overlay"><div class="text">Honey Bomb</div></div></div></a></li>
 
    <div id="myModal" class="modal">
@@ -35,7 +35,7 @@
   </div>
 
    <script>
-	var modal = document.getElementsById("myModal");
+	var modal = document.getElementById("myModal");
    	function nim() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
