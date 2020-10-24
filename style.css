@@ -22,6 +22,12 @@ body {
     margin-right: 10%;
 }
 
+.bodyp {
+  margin-left: 10%;
+  max-width: 2000px;
+  margin-right: 10%;
+}
+
 #main {
     top: 50%;
     margin-top: 0px;
@@ -113,15 +119,15 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: normal;
 }
 
 .flexMe li{
-    width: 200px; 
-    height: 200px;
+    width: 400px; 
+    height: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: normal;
+    align-items: normal;
 }
 
 .flexMe li img{
