@@ -85,7 +85,7 @@ a:hover {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #555f5c;
+  background-color: rgba(0,0,0,0.45);
 }
 
 .container:hover .overlay {
@@ -216,7 +216,7 @@ b {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #9b5ec4;
   color: white;
 }
 
