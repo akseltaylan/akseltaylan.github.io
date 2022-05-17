@@ -12,6 +12,7 @@
 	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p>
 	</br></br></br>
 	<ul class="flexMe">
+		<li><div class="container"><img src="images/elemental.png" alt="Elemental (2023)" class="image" ><div class="overlay" onclick="elemental()"><div class="text">Elemental (2023)</div></div></div></li>
    <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona</div></div></div></li>
    <li><div class="container"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay" onclick="pt()"><div class="text">Monte Carlo Path Tracer</div></div></div></li>
    <li><div class="container"><img src="images/lumiere.png" alt="ARTe: Lumiere" class="image"><div class="overlay" onclick="lumiere()"><div class="text">ARTe: Lumiere</div></div></div></li>
@@ -35,6 +36,11 @@
 
    <script>
 	var modal = document.getElementById("myModal");
+	function elemental() {
+		modal.style.display = "block";
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "<p>I am currently working on this film as a <b>Global Technology Technical Director</b>. Stay tuned for more!</p>";
+   	}
    	function nim() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
