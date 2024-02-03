@@ -12,8 +12,9 @@
 	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p>
 	</br></br></br>
 	<ul class="flexMe">
-		<li><div class="container"><img src="images/elemental.jpg" alt="Elemental" class="image" ><div class="overlay" onclick="elemental()"><div class="text">Elemental (2023)</div></div></div></li>
-   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona (2023)</div></div></div></li>
+		<li><div class="container"><img src="images/io2.png" alt="Inside out 2" class="image" ><div class="overlay" onclick="io2()"><div class="text">Inside Out 2</div></div></div></li>
+		<li><div class="container"><img src="images/elemental2.png" alt="Elemental" class="image" ><div class="overlay" onclick="elemental()"><div class="text">Elemental</div></div></div></li>
+   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona</div></div></div></li>
    <li><div class="container"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay" onclick="pt()"><div class="text">Monte Carlo Path Tracer</div></div></div></li>
    <li><div class="container"><img src="images/lumiere.png" alt="ARTe: Lumiere" class="image"><div class="overlay" onclick="lumiere()"><div class="text">ARTe: Lumiere</div></div></div></li>
    <li><div class="container"><img src="images/hauntana.png" alt="Hauntana" class="image"><div class="overlay" onclick="hauntana()"><div class="text">Hauntana</div></div></div></li>
@@ -36,10 +37,15 @@
 
    <script>
 	var modal = document.getElementById("myModal");
+	function io2() {
+		modal.style.display = "block";
+   		var x = document.getElementById("projectDesc");
+   		x.innerHTML = "<p>I worked on this film as a <b>Global Technology Technical Director</b> from January 2023 until April 2023. I'm currently on the film as the <b>Dailies Lead</b>. Stay tuned for more!</p>";
+   	}
 	function elemental() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
-   		x.innerHTML = "<p>I am currently working on this film as a <b>Global Technology Technical Director</b>. Stay tuned for more!</p>";
+   		x.innerHTML = "<p>I worked on this film from February 2021 until January 2023 as a <b>Global Technology Technical Director</b>. I got to work on a variety of projects. Here are some highlights!<br><br>During the early phases of production I assisted in stylized looks explorations for the environments of the film. I developed a pipeline which generated a binary texture at render-time depicting what parts of the scene are in light versus in shadow, which shading artists could use in their shading networks via projection to make a material look different when it was lit versus in shadow. <br><br>One of the major technical challenges were the volumetric, dynamic, simulated characters. I worked extensively on improving our volumetric character pipeline to meet the needs of the film. Additionally, I co-developed a method for shading and simulating the crowd characters with minimal storage and render cost, primarily focusing on the water characters. To do this, we utilized render-time Houdini Engine procedurals, allowing us to accomplish shots with thousands of dynamic simulated characters that look almost identical to their full-fidelity counterparts. I presented this project with my colleagues at the ACM SIGGRAPH conference in summer 2023. You can read more about our technique in our SIGGRAPH abstract <a href='https://graphics.pixar.com/library/ElementalCrowd/paper.pdf' target='_blank'><b>linked here</b></a>.</p>";
    	}
    	function nim() {
 		modal.style.display = "block";
