@@ -9,12 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body style="max-width: 7000px; margin-left: 0%; margin-right: 3%;">
-	<p style="float:right;"><a title="About" href="index.html">{ about }</a></p>
+		<p style="float:right;cursor:default"><a onclick="abt()"><b>{ about }</b></a></p>
 	</br></br></br>
 	<ul class="flexMe">
 		<li><div class="container"><img src="images/io2.png" alt="Inside out 2" class="image" ><div class="overlay" onclick="io2()"><div class="text">Inside Out 2</div></div></div></li>
 		<li><div class="container"><img src="images/elemental2.png" alt="Elemental" class="image" ><div class="overlay" onclick="elemental()"><div class="text">Elemental</div></div></div></li>
-   <li><div class="container"><img src="images/nimona.jpg" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona</div></div></div></li>
+   <li><div class="container"><img src="images/nimona2.png" alt="Nimona" class="image" ><div class="overlay" onclick="nim()"><div class="text">Nimona</div></div></div></li>
    <li><div class="container"><img src="images/pathtracer.png" alt="Path Tracer" class="image"><div class="overlay" onclick="pt()"><div class="text">Monte Carlo Path Tracer</div></div></div></li>
    <li><div class="container"><img src="images/lumiere.png" alt="ARTe: Lumiere" class="image"><div class="overlay" onclick="lumiere()"><div class="text">ARTe: Lumiere</div></div></div></li>
    <li><div class="container"><img src="images/hauntana.png" alt="Hauntana" class="image"><div class="overlay" onclick="hauntana()"><div class="text">Hauntana</div></div></div></li>
@@ -40,17 +40,17 @@
 	function io2() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
-   		x.innerHTML = "<p>I worked on this film as a <b>Global Technology Technical Director</b> from January 2023 until April 2023. I'm currently on the film as the <b>Dailies Lead</b>. Stay tuned for more!</p>";
+   		x.innerHTML = "<p>I worked on this film as a <b>Global Technology Technical Director</b> from January 2023 until April 2023.<br><br> I'm currently on the film as the <b>Dailies Lead Technical Director</b>. Stay tuned for more!</p>";
    	}
 	function elemental() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
-   		x.innerHTML = "<p>I worked on this film from February 2021 until January 2023 as a <b>Global Technology Technical Director</b>. I got to work on a variety of projects. Here are some highlights!<br><br>During the early phases of production I assisted in stylized looks explorations for the environments of the film. I developed a pipeline which generated a binary texture at render-time depicting what parts of the scene are in light versus in shadow, which shading artists could use in their shading networks via projection to make a material look different when it was lit versus in shadow. <br><br>One of the major technical challenges were the volumetric, dynamic, simulated characters. I worked extensively on improving our volumetric character pipeline to meet the needs of the film. Additionally, I co-developed a method for shading and simulating the crowd characters with minimal storage and render cost, primarily focusing on the water characters. To do this, we utilized render-time Houdini Engine procedurals, allowing us to accomplish shots with thousands of dynamic simulated characters that look almost identical to their full-fidelity counterparts. I presented this project with my colleagues at the ACM SIGGRAPH conference in summer 2023. You can read more about our technique in our SIGGRAPH abstract <a href='https://graphics.pixar.com/library/ElementalCrowd/paper.pdf' target='_blank'><b>linked here</b></a>.</p>";
+   		x.innerHTML = "<p>I worked on this film from February 2021 until January 2023 as a <b>Global Technology Technical Director</b>. I got to work on a variety of projects. Here are some highlights!<br><br>During the early phases of production I assisted in <b>stylized looks explorations for the environments</b> of the film. I developed a pipeline which generated a binary texture at render-time depicting what parts of the scene are in light versus in shadow, which shading artists could use in their shading networks via projection to make a material look different when it was lit versus in shadow. <br><br>One of the major technical challenges were the volumetric, dynamic, simulated characters. I worked extensively on improving our <b>volumetric character pipeline</b> to meet the needs of the film. Additionally, I co-developed <b>a method for shading and simulating the crowd characters</b> with minimal storage and render cost, primarily focusing on the water characters. To do this, we utilized render-time Houdini Engine procedurals, allowing us to accomplish shots with thousands of dynamic simulated characters that look almost identical to their full-fidelity counterparts. I presented this project with my colleagues at the ACM SIGGRAPH conference in summer 2023. You can read more about our technique in our SIGGRAPH abstract, linked below. <br><br><a title='itch.io' target='_blank' href='https://graphics.pixar.com/library/ElementalCrowd/paper.pdf'><i class='fa fa-external-link' style='font-size:24px'></i></a></p>";
    	}
    	function nim() {
 		modal.style.display = "block";
    		var x = document.getElementById("projectDesc");
-   		x.innerHTML = "<p>While working at Blue Sky as a <b>Production Technology Technical Director Intern</b> in Summer 2019, I was lucky enough to be a part of the <i>Nimona</i> team. (If you haven't read the graphic novel, I highly suggest it!) I developed tools for artists in several different departments. I highlighted some projects below!<br><br>I developed an HDA that utilized the <b>radial basis function</b> algorithm to retarget hair grooms from one character to another given universal topology.<br><br>I worked with the shader development team on writing <b>C++ RenderMan plugins</b> to achieve the look the art-director proposed for the film. These projects involved collaboration and research with several departments including crowds, FX, and lighting.</p>";
+   		x.innerHTML = "<p>While working at Blue Sky as a <b>Production Technology Technical Director Intern</b> in Summer 2019, I was lucky enough to be a part of the <i>Nimona</i> team, though I ended up getting a credit on <i>Spies In Disguise</i>, since Blue Sky credited their interns on whatever film came out first after the internship, regardless of what they worked on.<br><br> I developed tools for artists in several different departments. I highlighted some projects below!<br><br>I developed an HDA that utilized the <b>radial basis function</b> algorithm to retarget hair grooms from one character to another given universal topology.<br><br>I worked with the shader development team on writing <b>C++ RenderMan plugins</b> to achieve the look the art-director proposed for the film. These projects involved collaboration and research with several departments including crowds, FX, and lighting.</p>";
    	}
    	function hemut() {
 		modal.style.display = "block";
@@ -82,6 +82,24 @@
    		var x = document.getElementById("projectDesc");
    		x.innerHTML = "";
    	}
+	function abt() {
+		modal.style.display = "block";
+   		var x = document.getElementById("projectDesc");
+		x.innerHTML = `<div class='grid-container'><div class='grid-item'><img src='https://avatars2.githubusercontent.com/u/22566837?s=400&v=4' class='avatar' align='middle'></div></div><hr><p>hey, i'm <b>aksel taylan</b> &#128075;</p>
+<p>i'm a <b>technical director</b> at <a href='http://pixar.com/' target='_blank'><b id='pix1'>pixar animation studios</b></a>, in the global technology department.</p>
+<p>previously i was a <b>software engineer</b> at <b id='amzn'>amazon</b>, working on expansions.</p>
+<p>while in college i spent summers as a <b>software engineer intern</b> at pixar, working on their proprietary shading tool, Flow, and as a <b>technical director intern</b> at <a href='http://blueskystudios.com/' target='_blank'><b id='bss'>blue sky studios</b></a>, working on their feature film<i>Nimona</i>.</p>
+<p>i studied <b>computer science & mathematics</b> at <a href='https://tamu.edu' target='_blank'><b id='tamu'>texas a&m unversity</b></a>, focused in computer graphics and animation. i'm passionate about the intersection between <span class='rainbow'><b>technology and art</b></span> &#127912; and storytelling in any medium &#128220;</p>
+<p>feel free to hit me up! &#128236;</p><a title='Instagram' target='_blank' href='https://instagram.com/akselk_t'><i class='fa fa-instagram' style='font-size:24px'></i></a>
+<a title='Twitter' target='_blank' href='https://twitter.com/aksel_kt'><i class='fa fa-twitter' style='font-size:24px'></i></a>
+<a title='LinkedIn' target='_blank' href='https://www.linkedin.com/in/aksel-taylan-830682101/'><i class='fa fa-linkedin' style='font-size:24px'></i></a>
+<a title='Email' target='_blank' href='mailto:akselt@pixar.com'><i class='fa fa-envelope' style='font-size:24px'></i></a>
+<a title='Vimeo' target='_blank' href='https://vimeo.com/aksel'><i class='fa fa-vimeo' style='font-size:24px'></i></a>
+<a title='Github' target='_blank' href='https://github.com/akseltaylan'><i class='fa fa-github' style='font-size:24px'></i></a>
+<a title='Blog' target='_blank' href='https://akseltblogs.blogspot.com/'><i class='fa fa-rss-square' style='font-size:24px'></i></a>
+<a title='Resume' target='_blank' href='resume.pdf'><i class='fa fa-file' style='font-size:24px'></i></a><br><br>`;
+	}
+	
 	var closebtn = document.getElementsByClassName("close")[0];
 	closebtn.onclick = function() { modal.style.display = "none"; }
 
@@ -92,6 +110,7 @@
 		}
 	}
    </script>
+   
 </ul>
 </body>
 </html>

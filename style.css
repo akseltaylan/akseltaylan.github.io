@@ -111,6 +111,9 @@ a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.textb {
+  font-family: 'Roboto', sans-serif;
+}
 
 /* from https://stackoverflow.com/questions/40656611/best-way-to-make-a-image-grid-all-same-size-and-dimensions */
 .flexMe{
